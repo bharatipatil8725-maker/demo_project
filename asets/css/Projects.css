@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #123b4a;
+
+    background: linear-gradient(
+        135deg,
+        #b9e9ff,
+        #ffffff
+    );
+}
+
+header {
+    height: 75px;
+
+    background: white;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+header h2 {
+    color: #159ed0;
+
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #123b4a;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #159ed0;
+
+    border-bottom: 3px solid #159ed0;
+
+    padding-bottom: 7px;
+}
+
+.projects {
+    min-height: calc(100vh - 75px);
+
+    padding: 55px 8%;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #b9e9ff,
+        #ffffff
+    );
+}
+
+.projects h1 {
+    font-size: 50px;
+
+    color: #159ed0;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+
+    color: #456b78;
+
+    margin-bottom: 40px;
+}
+
+.project-container {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow:
+        0 8px 25px rgba(21, 158, 208, 0.15);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h2 {
+    color: #159ed0;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #456b78;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+.project-card span {
+    display: inline-block;
+
+    background: #dff6ff;
+
+    color: #087eaa;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-right: 6px;
+}
+
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .projects {
+        padding: 45px 20px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects h1 {
+        font-size: 40px;
+    }
+footer {
+    background: white;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}

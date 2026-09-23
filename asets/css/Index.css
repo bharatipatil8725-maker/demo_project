@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b9e9ff, #ffffff);
+    color: #123b4a;
+}
+
+
+header {
+    height: 75px;
+    background: white;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header h2 {
+    color: #159ed0;
+    font-size: 28px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #123b4a;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #159ed0;
+    border-bottom: 3px solid #159ed0;
+    padding-bottom: 7px;
+}
+
+
+
+.hero {
+    min-height: calc(100vh - 75px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 50px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #b9e9ff,
+        #ffffff
+    );
+}
+
+.content {
+    width: 50%;
+}
+
+.hello {
+    color: #087eaa;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.content h1 {
+    font-size: 58px;
+    color: #159ed0;
+}
+
+.content h2 {
+    font-size: 42px;
+    margin: 10px 0 20px;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #456b78;
+}
+
+
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.buttons a:first-child {
+    background: #19a9df;
+    color: white;
+}
+
+.buttons a:last-child {
+    background: white;
+    color: #159ed0;
+    border: 2px solid #19a9df;
+}
+
+
+
+.photo {
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+    padding: 12px;
+
+    background: white;
+    border: 8px solid #a9e3fa;
+
+    box-shadow: 0 0 0 8px #dff6ff;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+footer {
+    background: white;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
